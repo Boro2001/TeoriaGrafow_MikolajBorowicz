@@ -1,0 +1,7 @@
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/CMakeFiles/rebuild_cache.dir
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/CMakeFiles/edit_cache.dir
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/src/CMakeFiles/rebuild_cache.dir
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/src/CMakeFiles/edit_cache.dir
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/src/CMakeFiles/valgrind_max_flux.dir
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/src/CMakeFiles/run_max_flux.dir
+/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/build/src/CMakeFiles/max_flux.dir
