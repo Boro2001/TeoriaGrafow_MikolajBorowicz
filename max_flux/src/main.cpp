@@ -15,11 +15,10 @@ public:
     
     Node();
     Node(int);
-    ~Node();
 };
 Node::Node(){
-    ++num_node;
-    name = num_node;
+
+    name = num_node++;
     flow = 0;
 }
 Node::Node(int n){
@@ -36,7 +35,6 @@ public:
     static int num_edge;
 
     Edge();
-    ~Edge();
 };
 Edge::Edge(){
     source = nullptr;
@@ -52,7 +50,9 @@ public:
   void add_node();
   void add_edge(int, int, int);
   void add_nodes(int);
-  int find_max_flux(int, int);
+  int find_max_flux(int, int, int, int);
+  int bfs(int, int *, int, int );
+  void update_edges(int, int *, int);
 
 };
 void Diagram::add_node(){
@@ -70,15 +70,70 @@ void Diagram::add_edge(int s, int d, int w){
     nodes[s].outgoing.push_back(new_edge);
     nodes[d].ingoing.push_back(new_edge);
     new_edge.maxflow = w; 
-    cout<<s<<" to "<<d<< " max-flux: "<< w<<" edge added\n";
+    cout<<s<<" to "<<d<< " max-flux: "<< w<< "adress of source node" << &(nodes[s]) << "adress of destination node " << &(nodes[d]) <<" edge added\n";
 }
-int Diagram::find_max_flux(int source, int destination){
+int Diagram::find_max_flux(int source, int destination, int n, int e){
     int sum = 0;
     // relaxation - go as deep as you find destination, and then relax the path and add relaxation difference to the sum
-    Node * pt1 = &nodes[source];Node * previous = pt1;
-    Node * pt2 = &nodes[destination];
-    while(true){
-        previous = pt1;
+    int * path = new int [n];
+    for(int i = 0;i<n;++i)path[i]=-1;
+
+    int len = 0,a =0, relax = 0 ;
+    bool flag = true;
+    while (flag)
+    {
+        relax = bfs(0,path,source,destination);
+        for(int i = 0;i<n;++i)cout<<path[i];
+        if(relax==-1){
+            cout<<"japierdziele";
+            flag=false;return sum;
+            break;
+        }
+         
+        for(int i = 0;i<n;++i){
+            cout << path[i];
+            if(path[i]==-1){
+                a=i;
+                cout<<"---"<<a<<"---";
+                break;
+                }    
+        }
+
+        update_edges(a,path,relax);
+        sum+=relax;
+        for(int i = 0;i<n;++i)path[i]=0;
+    }
+}
+int Diagram::bfs(int len, int * path, int start, int destination){
+    Node current_node = nodes[start];
+    cout<<"new node added to path: " << start <<"\n";
+    path[len] = start; // dodanie obecnego noda do sciezki
+    if(start==destination){return 1000;cout<<"@@";} //przepustowosc
+    for(auto & edge : current_node.outgoing)
+    {
+        bool flag = true;
+        if(edge.maxflow==0)flag = false;
+        for(int i = 0;i < len;++i){
+            if(edge.destination->name==path[i]) flag = false; // jesli 
+        }
+
+        if(flag) {
+            int bottleneck = bfs(len+1,path,edge.destination->name,destination);
+            if(edge.maxflow < bottleneck) return edge.maxflow;
+            cout<<"--"<<edge.destination->name<<" ";
+            return bottleneck;
+        }
+    }
+    return -1; // czyli w przypadku gdy żaden nowy wierzchołek nie może być odwiedzony
+}
+void Diagram::update_edges(int len, int * path,int relax){
+    for(int i = 0; i< len-1; ++i){
+        for(auto & edge : edges){
+            if(edge.source->name==path[i] && edge.destination->name==path[i+1]) {
+                edge.maxflow-=relax;
+                cout<<"the edge : "<<edge.source->name << " " <<edge.destination->name<<" has been relax with : " << relax <<"\n";
+                }
+        }
     }
 
 }
@@ -89,16 +144,14 @@ int Edge::num_edge = 0;
 
 int main(){
 
-
-fstream plik;
-plik.open("../../lista_krawedzi.txt", std::ios::in | std::ios::out );
-    
-if( plik.good() == true )
-{
-    std::cout << "Uzyskano dostep do pliku!" << std::endl;
-    //tu operacje na pliku
-} else std::cout << "Dostep do pliku zostal zabroniony!" << std::endl;
-plik.close();
-
+    Diagram graph;
+    graph.add_nodes(11);
+    graph.add_edge(0,1,4);
+    graph.add_edge(1,2,5);
+    graph.add_edge(2,3,5);
+    graph.add_edge(3,4,10);
+    graph.add_edge(4,5,10);
+    graph.add_edge(1,6,10);
+    cout<<" "<<graph.find_max_flux(1,4,11,7)<<" ";//gdzieś w pętlach warunek ucieka
 
 }
