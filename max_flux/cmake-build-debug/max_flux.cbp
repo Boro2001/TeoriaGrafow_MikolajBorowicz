@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="max_flux"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="max_flux">
+				<Option output="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/max_flux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 max_flux"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="max_flux/fast">
+				<Option output="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/max_flux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 max_flux/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run_max_flux">
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 run_max_flux"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="valgrind_max_flux">
+				<Option working_dir="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 valgrind_max_flux"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/src/main.cpp">
+			<Option target="max_flux"/>
+		</Unit>
+		<Unit filename="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/boro/Dokumenty/tgrafow/TeoriaGrafow_MikolajBorowicz/max_flux/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
