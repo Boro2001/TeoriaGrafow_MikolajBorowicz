@@ -74,6 +74,9 @@ void update_edges(int relax, int *path, int **table, int n, int m){
     }
     //print_table(n,table);
 }
+void update_last_edge(int *path, int **table, int n, int m){
+    table[path[m-2]][path[m-1]] = 0;
+}
 int find_max_flux(int n, int e, int source, int destination){
     
     int **tab = new int*[n];
@@ -94,7 +97,7 @@ int find_max_flux(int n, int e, int source, int destination){
             int first = 0, second = 0;
             plik>>first>>second;
             cout<< first <<"->"<<second<<"  ";
-            insert_edge(first, second, rand() % 10, tab); 
+            insert_edge(first, second, 1, tab); 
     }
     }
 
@@ -106,7 +109,8 @@ int find_max_flux(int n, int e, int source, int destination){
         int relax = dfs(0,8,tab,n,path,0);
         int len = get_len(n, path);
         if(relax==-1) {
-            update_edges(100,path,tab,n,len);
+            //update_edges(100,path,tab,n,len);
+            update_last_edge(path, tab,n,len);
             }
         else{
             update_edges(relax,path,tab,n,len);
