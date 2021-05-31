@@ -7,7 +7,7 @@ W Pliku macierz_incydencji.pdf znajduje się macierz_incydencji
 
 Algorytm który implementowałem opiera się na przeszukiwaniu w głąb, w odróżnieniu od algorytmu Edmondsa-Karpa który wykorzystuje przeszukiwanie w głąb.
 Algorytm wykorzystuje relaksację dla połączeń które łączą źródło z ujściem. dodatkowo w momoencie gdy dana "odnoga" ścieżki nie pozwala na połączenie się z ujściem, to zostaje usunięta.
-Pesymistyczny czas działania algorytmu jest rzędu (E^2 * V) czyli dla sytuacji dla której byśmy mieli graf, w którym jest połączony każdy wierzchołek z każdą
+Pesymistyczny czas działania algorytmu jest rzędu (E^2 * V) czyli dla sytuacji dla której byśmy mieli graf, w którym jest połączony każdy wierzchołek z każdym wierzchołkiem.
 
 Aby uruchomić algorytm należy:
 -wejść do kat. ford_fulkerson
